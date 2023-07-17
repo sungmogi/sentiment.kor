@@ -5,7 +5,7 @@ During spring quarter this year, I was introduced into computational linguistics
 
 One of the most intriguing tasks was sentiment analysis, despite its (relative) simplicity. For my final project for this class, I wanted to do something similar to what we were taught in class, but with a dataset in Korean which is my mother tongue. 
 
-![Screen Shot 2023-07-14 at 2.53.27 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21f8a32e-7d94-47b2-ab49-b391147bbac7/Screen_Shot_2023-07-14_at_2.53.27_PM.png)
+<img width="959" alt="slide" src="https://github.com/sungmogi/sentiment.kor/assets/131221622/1edb7983-4a31-46b8-a441-c3586bb5bae6">
 
 (Slide from class)
 
