@@ -64,11 +64,11 @@ class SentimentClassifier(nn.Module):
 
 I chose 1e-3 as the learning rate, and took 300k steps. After training, the loss was 0.4852 (4s.f.) for training data and 0.5547 for dev data. 
 
-![v1 result.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46ff2f8d-73c0-41f0-a315-7d41f1e0a545/v1_result.png)
+![1e-3](https://github.com/sungmogi/sentiment.kor/assets/131221622/1842e6cc-5506-46bf-8084-79d0818d0bf1)
 
 When I changed the learning rate to 1e-2, I had the same result, but the loss converged much quickly. I decided to decrease the learning rate to 1e-2 and also the number of iterations to 100k. 
 
-![v1 lr 1e-2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e23d1ab3-df19-440b-8fed-dc1e5c37f7fc/v1_lr_1e-2.png)
+![1e-2](https://github.com/sungmogi/sentiment.kor/assets/131221622/0675144b-bdba-4984-92f2-5f6d8f2e15cd)
 
 I wanted to see how a two-layer network would work, but the losses were exactly the same (training 0.4852; dev 0.5547).
 
