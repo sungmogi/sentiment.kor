@@ -95,9 +95,9 @@ Ydev = torch.tensor(Ydev)
 
 # hyperparameters
 num_layers = 10
-learning_rate = 1e-3
-max_iters = 300000
-eval_iters = 10000
+learning_rate = 1e-2
+max_iters = 100000
+eval_iters = 5000
 
 torch.manual_seed(42)
 
@@ -118,7 +118,7 @@ model = SentimentClassifier(num_inputs)
 
 # SGD used as optimizer; this is a room for improvement, as I can use Adam instead later.
 criterion = nn.BCELoss()
-optimizer = optim.SGD(model.parameters(), lr= learning_rate)
+optimizer = optim.Adam(model.parameters(), lr= learning_rate)
 
 lossi = []
 
@@ -131,8 +131,6 @@ for epoch in range(max_iters):
     if (epoch + 1) % eval_iters == 0:
         lossi.append(loss.item())
         print(f"Epoch {epoch+1}/{max_iters}, Loss: {loss.item()}")
-
-plt.plot(lossi)
 
 @torch.no_grad()
 def split_loss(split):
